@@ -1,99 +1,15 @@
 <!DOCTYPE html>
 <html>
-<title>Harry Zhang</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="image/favicon.png" sizes="16x16">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-.video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:0px;
-	height:0;
-	overflow:hidden;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
-.hidden{
-    display:none;
-}
-
-.button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
-
-a {
-    color: #9900cc;
-    text-decoration: none;
-}
-
-.help            { cursor: help; }
-
 </style>
-<script>
-function toggleMoreResearch() {
-    var x = document.getElementById("more_research");
-    var y = document.getElementById("show_more_button");
-    x.style.display = "block";
-    y.style.display = "none";
-}
-
-function toggle(bib) {
-  var x = document.getElementById(bib);
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
 <body class="w3-light-grey">
-
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -106,81 +22,53 @@ function toggle(bib) {
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-		<!--
-          <img src="avatar.jpg" style="width:100%" alt="Avatar">
-		-->
-		<img src="image/finland_town.jpg" style="width:100%" alt="Avatar">
-        </div>
-        <center><h2><font face="georgia"> Li "Harry" Zhang &nbsp;</font><b>张力 </b></h2></center>
-        <div class="w3-container">
-          <hr>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-purple"></i>About Me</b></p>
-          <p><font color='black'>I am a first-year PhD student focusing on Natural Language Processing, working with <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a> at the University of Pennsylvania. I graduated from the University of Michigan in 2018, previously mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>.</font></p>
-          <a href="docs/CV.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity">CV</span></a> &nbsp; <a href="docs/简历.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity w3-hover-opacity">简历</span></a> &nbsp; <a href="#publications"><span class="w3-tag w3-purple w3-round w3-hover-opacity">Publications</span></a> &nbsp; 
-          <a href="https://www.facebook.com/gyczzl997"><i class="fa fa-facebook-official w3-large w3-hover-opacity"></i></a> &nbsp; 
-          <a href="https://twitter.com/liharryzhang"><i class="fa fa-twitter w3-large w3-hover-opacity"></i></a> &nbsp; 
-          <a href="https://www.linkedin.com/in/hazrael"><i class="fa fa-linkedin w3-large w3-hover-opacity"></i></a>
-          <br>
-          <br>
-          <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-purple"></i>University of Pennsylvania</p>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple"></i><span class="tooltip">NLP<span class="tooltiptext">Natural Language Processing</span></span>, <span class="tooltip">ML<span class="tooltiptext">Machine Learning</span></span>, <span class="tooltip">AI<span class="tooltiptext">Artificial Intelligence</span></span> </p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple"></i>Shenzhen, China</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>zharry@seas.upenn.edu</p>
-          <hr>
-          
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-music fa-fw w3-margin-right w3-text-purple"></i>Music</b></p>
-		  <div class="video-container">
-		  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL8TrugrVCqpzBuwQx7qrdOS" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
-          <br>
-          <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL-vVxB6-8Xqj1tosmzOMpec" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
-          <p>I am an amateur drummer and guitarist, occasionally making covers.</p>
-          <hr>
-		  
-		  <p class="w3-large w3-text-theme"><b><i class="fa fa-bullseye fa-fw w3-margin-right w3-text-purple"></i>Pool</b></p>
-		  <div class="video-container">
-		  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL9dpYJcnCJXinRaShG8vtiC" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
-          <p>I am a competitive pool player. In college I was in the university team and played in intercollegiate tournaments.</p>
-          <hr>
-          <!--
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-gamepad fa-fw w3-margin-right w3-text-purple"></i>Gaming</b></p>
-		  <img src="image/Hearthstone Screenshot 03-17-18 01.38.58.png" alt="hearthstone">
-          <p>I'm a retired competitive player of <a href="https://playhearthstone.com/" target="_blank">Hearthstone</a>, Ragnarok#13105 on North America server, from July 2016 to May 2018.</p>
-          <ul>
-            <li>6 times Legend rank (&lt 1%) in Ranked Play </li>
-			<li>#29 out of 5 million players in March 2018</li>
-			<li><span class="tooltip">Michigan Hearthstone Team<span class="tooltiptext">Team name: RIPatches</span></span>: #9 out of 821 teams in <a href='https://compete.tespa.org/tournament/97/registrants' target='_blank'>TESPA 2018</a> (intercollegiate)</li>
-		  </ul>
-          -->
-          <!--
-          <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL_TveqUTWhbJ-BHwLCe0w4X" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Jane Doe</h2>
           </div>
-          <p>I'm also an accomplished player of <a href="http://www.monsterhunterworld.com/us/" target="_blank">Monster Hunter World</a>, doing speedruns occasionally.</p>
-          -->
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
           <hr>
-		  <p class="w3-large w3-text-theme"><b><i class="fa fa-star-half-o fa-fw w3-margin-right w3-text-purple"></i>Adventures</b></p>
-		  <div class="video-container">
-		  <iframe width="413" height="230" src="https://www.youtube.com/embed/videoseries?list=PLdoWMpbmbJL98ZZaNGg5vHdPnbZsxMfJH" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
-          <p>I took a leap of faith from: </p>
-          <ul>
-			<li><a href='https://www.skydivetecumseh.com/' target='_blank'>Skydive Tecumseh, USA</a> (18,000 feet)</li>
-            <li><a href='https://www.macautower.com.mo/tower-adventure/tower-adventure/bungy-jump/' target='_blank'>Macau Tower, China</a> (233 meters, the highest bungy jump in the world)</li>
-			<li><a href='https://www.bungy.co.nz/queenstown/nevis/nevis-swing/' target='_blank'>Nevis Swing, New Zealand</a> (300 meters arc)</li>
-			<li><a href='https://www.bungy.co.nz/queenstown/kawarau-bungy-centre/kawarau-bridge-bungy/' target='_blank'>Kawarau Bridge, New Zealand</a> (43 meters, the first bungy jump in the world)</li>
-		  </ul>
-          <!--
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-puzzle-piece fa-fw w3-margin-right w3-text-purple"></i>Trivia</b></p>
-          <ul>
-            <li>I picked my nickname Harry when I was 7 due to the Harry Potter series.</li>
-            <li>I identify as Slytherin, Targaryen and INTJ.</li>
-          </ul>
-          -->
-		  <br>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Photography</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Illustrator</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Media</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          </div>
+          <p>German</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+          </div>
+          <br>
         </div>
       </div><br>
 
@@ -189,208 +77,48 @@ function toggle(bib) {
 
     <!-- Right Column -->
     <div class="w3-twothird">
-      <!--
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>About me</h2>
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <div class="w3-container">
-          I am about to be a first-year PhD student focusing on Natural Language Processing, working with <a href="http://www.cis.upenn.edu/~ccb/" target="_blank">Prof. Chris Callison-Burch</a> starting Fall 2019. I graduated from the University of Michigan in 2018, previously mentored by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank">Prof. Rada Mihalcea</a> and <a href="http://www.cs.yale.edu/homes/radev/" target="_blank">Prof. Dragomir Radev</a>.  <br><br>
-          <a href="docs/CV.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity">CV</span></a> &nbsp; <a href="docs/简历.pdf" target="_blank"><span class="w3-tag w3-purple w3-round w3-hover-opacity w3-hover-opacity">简历</span></a> &nbsp; <a href="#publications"><span class="w3-tag w3-purple w3-round w3-hover-opacity">Publications</span></a> &nbsp; 
-          <a href="https://www.facebook.com/gyczzl997"><i class="fa fa-facebook-official w3-large w3-hover-opacity"></i></a> &nbsp; 
-          <a href="https://twitter.com/liharryzhang"><i class="fa fa-twitter w3-large w3-hover-opacity"></i></a> &nbsp; 
-          <a href="https://www.linkedin.com/in/hazrael"><i class="fa fa-linkedin w3-large w3-hover-opacity"></i></a>
-          <br><br>
-          
+          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
         </div>
       </div>
-      -->
-	  
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-search fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research Highlights</h2>
-		<!--
-		<span class="w3-tag w3-purple w3-round w3-hover-opacity">Current</span>
-		-->
-        
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Split and Rephrase: Evaluation Benchmarks and Metrics</b> </h5>
-          <!-- <img src="image/lit.png" alt="LIT" height="70" width="70"> -->
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019</h6>
-          Split and Rephrase is a text simplification task to rewrite a complex sentence into several simpler ones. We show that the existing benchmark is too simplistic, developing a rule-based model using no training data which performs on par with the current state-of-the-art neural model. We then propose two new crowdsourced benchmarks with improved quality. We also provide a study on the flaws of BLEU score, and the cost-efficiency of using crowd workers to evaluate. </p>
-          <hr>
-        </div>
-        
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Sentence Embeddings, Transfer Learning and Semantic Similarity</b> <sup><a href="#pub2">[2]</a> <a href="#pub3">[3]</a></sup></h5>
-          <!-- <img src="image/lit.png" alt="LIT" height="70" width="70"> -->
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Sept 2018</h6>
-          Recent advancement on neural sentence embeddings show highly competitive performance on semantic similarity tasks. However, the embeddings don't usually just work off-the-shelf, as we show that the transfer learning methodology is crucial to performance. We propose a fine-tuning approach and a multi-label approach which outperforms most alternative transfer learning approaches on semantic similarity tasks, achieving state-of-the-art performance on multiple datasets. </p>
-          <hr>
-        </div>
 
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Academic Advising Dialogue System and Text-to-SQL Generation</b> <sup><a href="#pub1">[1]</a></sup></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - Apr 2017 </h6>
-          The work is a part of the <a href='http://sapphire.eecs.umich.edu/' target="_blank">Sapphire project</a>, a collaboration between U-M and IBM. The goal is to build a dialog system able to answer questions about university course information. While tackling the task of translating natural language to SQL, we identified flaws in the current text-to-SQL evaluation scheme and proposed alternatives. I contributed to building the a text-to-SQL dataset and implementing named entitiy recognition as a preprocessing step.</p>
-          <hr>
-        </div>
-        <div id='show_more_button'>
-            <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">More research</span></button>
-        </div>
-        <div id="more_research" class='hidden'>
-            <div class="w3-container">
-              <h5 class="w3-text-gray"><b>Active Interpretation of Disparate Alternatives</b><span style="float:right;"><a href="https://www.darpa.mil/program/active-interpretation-of-disparate-alternatives" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
-              <!-- <img src="image/newyorker.jpeg" alt="The New Yorker" height="40" width="136"> -->
-              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Feb 2019 </h6>
-              <p>Funded by DARPA, this project involves many institutes and desciplines including NLP and computer vision. From the texts, audios and videos recounting the Russia-Ukraine conflict in 2014, the goal is to extract knowledge elements and generate hypotheses about real-life events. I used named entity recognition, keyword extraction and word embeddings to extract textual entities from the data and assign them with categories from the given ontology.</p>
-              <hr>
-            </div>
-
-            <div class="w3-container">
-              <h5 class="w3-text-gray"><b>Cartoon Caption Clustering</b><span style="float:right;"><a href="http://tangra.cs.yale.edu//cartoons/newFold/cartoongallery2.php" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
-              <!-- <img src="image/newyorker.jpeg" alt="The New Yorker" height="40" width="136"> -->
-              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - Apr 2016 </h6>
-              <p>In each volume of the New Yorker magazine, there is a comic section where thousands of readers submit funny captions. The goal is to automatically divide them into clusters based on their theme of humor (what they are joking about) using unsupervised learning. Work had been done years ago but the codes were scattered and underdocumented. I as a freshman was in charge of this project, to bring the existing system up to date and to make optimization. </p>
-              <hr>
-            </div>
-          
-            <div class="w3-container">
-              <h5 class="w3-text-gray"><b>ACL Anthology Network</b><span style="float:right;"><a href="http://tangra.cs.yale.edu/newaan/" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
-              <!-- <img src="image/1200px-Association_for_Computational_Linguistics_logo.svg.png" alt="ACL" height="50" width="75"> -->
-              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2016 - Dec 2016 </h6>
-              <p>AAN encompases our corpus of resources on NLP and related fields and the research projects which build upon this corpus. We have collected around 6,500 surveys, tutorials and other resources and created a search engine which allows users to easily browse these resources. I helped build and maintain this power anthology with information regarding numerous papers included in top NLP venues. It features paper citation, author citation, and author collaboration, etc. </p>
-            </div>
-            </div>
-            <br>
-      </div>
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work and Teaching Experience</h2>
-        
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Research Intern @ IBM Research</b><img src="image/ibm-logo.05dc870.png" alt="IBM Research" style="float:right;height:20px;"></h5>
-          
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jun 2019</h6>
-          <p>I did NLP research and software development on text simplification, the Split and Rephrase task. See more in Research Highlights.</p>
-          <hr>
-        </div>
-        
-        
-        <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Summer Analyst in Technology @ Goldman Sachs</b><img src="image/GoldmanSachsLogo.jpg" alt="Goldman Sachs" style="float:right;height:40px;"></h5>
-          
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Aug 2017</h6>
-          <p>As a full-stack developer, I enhanced the GS App Store, the firm’s internal application delivery and management software. The technology stack for GS App Store consists of AngularJS, C# Web APIs and Elasticsearch. My major goal was to improve user experience using data analytics and machine learning.</p>
+          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <p>Web Development! All I need to know in one place</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-text-gray"><b>Instructional Aide @ Michigan Engineering</b><img src="image/UMCoE.jpg" alt="Michigan EECS" style="float:right;width:250px;height:25x;"></h5>
-		  <!-- <img src="image/UMCoE.jpg" alt="Michigan EECS" height="25" width="250"> -->
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Dec 2018</h6>
-          <p> I instructed EECS 595: Natural Language Processing, the graduate NLP course at the Univerisity. Before that, I instructed EECS 280: Programming and Introductory Data Structures, one of the largest courses in the department.</p>
-            <br>
+          <h5 class="w3-opacity"><b>London Business School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Master Degree</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>School of Coding</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+          <p>Bachelor Degree</p><br>
         </div>
       </div>
-      
-      <a id="publications">
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-paper-plane-o fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Publications</h2>
-        <div class="w3-container">
-        
-          <a name="pub4"></a>
-          <h5 class="w3-text-gray"><b>[4] A paper</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, and others</h6>
-          <p>Submitted to <a href="https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI 2020</a>. </p>
-          <hr>
-        
-          <a name="pub3"></a>
-          <h5 class="w3-text-gray"><b>[3] Multi-Label Transfer Learning for Multi-Relational Semantic Similarity</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
-          <p><a href="https://www.aclweb.org/anthology/S19-1005" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('sem2019bib')">BibTeX</span> <a href="docs/starSEM2019-presentation.pdf" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Slides</span></a> &nbsp; In <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a>; presented at <a href="https://naacl2019.org/" target="_blank">NAACL 2019</a>.</p>
-          <div id="sem2019bib" class='hidden'>
-            @inproceedings{zhang-etal-2019-multi,
-                title = "Multi-Label Transfer Learning for Multi-Relational Semantic Similarity",
-                author = "Zhang, Li  and
-                  Wilson, Steven  and
-                  Mihalcea, Rada",
-                booktitle = "Proceedings of the Eighth Joint Conference on Lexical and Computational Semantics (*{SEM} 2019)",
-                month = jun,
-                year = "2019",
-                address = "Minneapolis, Minnesota",
-                publisher = "Association for Computational Linguistics",
-                url = "https://www.aclweb.org/anthology/S19-1005",
-                pages = "44--50",
-                abstract = "Multi-relational semantic similarity datasets define the semantic relations between two short texts in multiple ways, e.g., similarity, relatedness, and so on. Yet, all the systems to date designed to capture such relations target one relation at a time. We propose a multi-label transfer learning approach based on LSTM to make predictions for several relations simultaneously and aggregate the losses to update the parameters. This multi-label regression approach jointly learns the information provided by the multiple relations, rather than treating them as separate tasks. Not only does this approach outperform the single-task approach and the traditional multi-task learning approach, but it also achieves state-of-the-art performance on all but one relation of the Human Activity Phrase dataset.",
-            }
-          </div>
-          <hr>
-          <a name="pub2"></a>
-          <h5 class="w3-text-gray"><b>[2] Direct Network Transfer: Transfer Learning of Sentence Embeddings for Semantic Similarity</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Li Zhang</b>, Steven R. Wilson and Rada Mihalcea</h6>
-          <p><a href="https://arxiv.org/abs/1804.07835" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('dntbib')">BibTeX</span> <a href="docs/ic2s2_18_activities.pptx.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a> &nbsp; In arXiv pre-print; presented at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target='_blank'>IC2S2 2018</a>.</p>
-          <div id="dntbib" class='hidden'>
-            @article{zhang2018sequential,
-              title={Sequential Network Transfer: Adapting Sentence Embeddings to Human Activities and Beyond},
-              author={Zhang, Li and Wilson, Steven R and Mihalcea, Rada},
-              journal={arXiv preprint arXiv:1804.07835},
-              year={2018}
-            }
-          </div>
-          <hr>
-          <a name="pub1"></a>
-          <h5 class="w3-text-gray"><b>[1] Improving Text-to-SQL Evaluation Methodology</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Catherine Finegan-Dollak, Jonathan K. Kummerfeld,
-           <b>Li Zhang</b>, Karthik Ramanathan Dhanalakshmi
-           Ramanathan, Sesh Sadasivam, Rui Zhang and Dragomir
-           Radev</h6>
-          <p><a href="https://arxiv.org/abs/1806.09029" target="_blank"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Paper</span></a> <span class="help w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity" onclick="toggle('acl2018bib')">BibTeX</span> <a href="https://github.com/jkkummerfeld/text2sql-data""><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Code</span></a> <a href="docs/acl2018_poster - final.pdf"><span class="w3-tag w3-white w3-border w3-border-black w3-text-black w3-round w3-hover-opacity">Poster</span></a> &nbsp; In <a href='https://acl2018.org/'  target="_blank">ACL 2018</a>.</p>
-          <div id="acl2018bib" class='hidden'>
-                    @InProceedings{acl18sql,
-          author    = {Catherine Finegan-Dollak\*  and  Jonathan K. Kummerfeld\*  and  Li Zhang  and  Karthik Ramanathan  and  Sesh Sadasivam  and  Rui Zhang  and  Dragomir Radev},
-          title     = {Improving Text-to-SQL Evaluation Methodology},
-          booktitle = {Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
-          shortvenue = {ACL},
-          month     = {July},
-          year      = {2018},
-          address   = {Melbourne, Victoria, Australia},
-          pages     = {351--360},
-          abstract  = {To be informative, an evaluation must measure how well systems generalize to realistic unseen data. We identify limitations of and propose improvements to current evaluations of text-to-SQL systems. First, we compare human-generated and automatically generated questions, characterizing properties of queries necessary for real-world applications. To facilitate evaluation on multiple datasets, we release standardized and improved versions of seven existing datasets and one new text-to-SQL dataset. Second, we show that the current division of data into training and test sets measures robustness to variations in the way questions are asked, but only partially tests how well systems generalize to new queries; therefore, we propose a complementary dataset split for evaluation of future work. Finally, we demonstrate how the common practice of anonymizing variables during evaluation removes an important challenge of the task. Our observations highlight key difficulties, and our methodology enables effective measurement of future development.},
-          url       = {http://aclweb.org/anthology/P18-1033},
-          software  = {https://github.com/jkkummerfeld/text2sql-data},
-          data      = {https://github.com/jkkummerfeld/text2sql-data},
-        }
-          </div>
-          <br>
-        </div>
-      </div>
-      
-      <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Education</h2>
-        <div class="w3-container">
-		
-		  <h5 class="w3-text-gray"><b>University of Pennsylvania</b><img src="image/upenn-logo.png" alt="upenn logo" style="float:right;width:120px;height:120px;"></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2019 - Present</h6>
-          <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Philadephia, PA, USA</h6>
-		  <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Ph.D. Computer Science</h6>
-		  <p>In progress.</p>
-		  
-		  <hr>
-		
-          <h5 class="w3-text-gray"><b>University of Michigan</b><img src="image/umich-logo.png" alt="umich logo" style="float:right;width:120px;height:120px;"></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - Dec 2018</h6>
-          <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Ann Arbor, MI, USA</h6>
-		  <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>B.S.E. Computer Science</h6>
-		  <p>GPA: 3.82/4.00 <i>summa cum laude</i></p>
-		  
-		  <hr>
-		  
-		  <h5 class="w3-text-gray"><b>Shenzhen Middle School</b><img src="image/sms-logo.jpg" alt="SMS logo" style="float:right;width:120px;height:120px;"></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2012 - Jun 2015</h6>
-          <h6 class="w3-text-purple"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Shenzhen, China</h6>
-		  <h6 class="w3-text-purple"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>High School Diploma</h6>
-		  <p>GPA: 4.23/4.30 </p>
-        </div>
-		<br>
-      </div>
-      
-      
 
     <!-- End Right Column -->
     </div>
@@ -401,8 +129,15 @@ function toggle(bib) {
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-purple w3-center w3-margin-top">
-  <p>&copy; Li Zhang 2019 &middot; Powered by w3.css</p>
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 </body>
