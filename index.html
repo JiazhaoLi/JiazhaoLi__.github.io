@@ -46,40 +46,67 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 
 
-
-
-
-
-
-
-
-
     <!-- Right Column -->
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-purple w3-round">Current</span></h6>
+          <h5 class="w3-opacity"><b>Prescription Transcription using Machine Translation</b></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2019 - <span class="w3-tag w3-purple w3-round">Current</span></h6>
           <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b>Identify Medication Relations from Clinical Narratives</b></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2018 - Mar 2019</h6>
+          <p>Identifying medication relations between drugs and associated attributes automatically from clinical narratives can help develop advanced tools for decision support. We investigate the strengths of neural network models to identify eight medication relations.  We find that relation extraction is sensitive to complexity of data patterns as well as model capacity. Our results show that Bi-LSTM models achieved an overall F1 score of 0.892 on eight tasks, outperforming SVM and CNN models.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          <h5 class="w3-opacity"><b>Video Segments Retrieval System based on Attentive Convolutionsl Neural Network</b></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Dec 2018</h6>
+          <p>Traditional methods simply relay on manual hash tags, title and description of video compared with free text query, which suffers from high bias and low accuracy. We proposed a novel video segments retrieval system based on architecture Attentive Convolutional Nerual Network (ACNN), achieving state-of-the-art performance on TACoS dataset.   </p><br>
         </div>
       </div>
-
+      <div id='show_more_button'>
+          <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-round w3-hover-opacity">More research</span></button>
+      </div>
+      <div id="more_research" class='hidden'>
+          <div class="w3-container">
+            <h5 class="w3-text-gray"><b>Active Interpretation of Disparate Alternatives</b><span style="float:right;"><a href="https://www.darpa.mil/program/active-interpretation-of-disparate-alternatives" target="_blank"><i class="fa fa-globe w3-xlarge w3-hover-opacity"></i></a></span></h5>
+            <!-- <img src="image/newyorker.jpeg" alt="The New Yorker" height="40" width="136"> -->
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Feb 2019 </h6>
+            <p>Funded by DARPA, this project involves many institutes and desciplines including NLP and computer vision. From the texts, audios and videos recounting the Russia-Ukraine conflict in 2014, the goal is to extract knowledge elements and generate hypotheses about real-life events. I used named entity recognition, keyword extraction and word embeddings to extract textual entities from the data and assign them with categories from the given ontology.</p>
+            <hr>
+          </div>
+          
+          </div>
+          <br>
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience </h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Research Specialist         @ Michigan Medicine</b><img src="image/medicine.png" alt="LHS" style="float:right;height:60px;"></h5>
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2019 - <span class="w3-tag w3-purple w3-round">Current</span></h6>
+            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+              <h5 class="w3-opacity"><b>Research Assistant        @ Michigan Medicine</b><img src="image/medicine.png" alt="LHS" style="float:right;height:60px;"></h5>
+              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2018 - May 2019</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+            </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Grader               @ Michigan Engineering </b><img src="image/EECS-log0.png" alt="EECS" style="float:right;height:60px;"></h5>
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - Apr 2019</h6>
+            <p>I am the grader of lecture EECS Information Retrieval by Prof. Rada Mihalcea</p>
+            <hr>
+          </div>
+          
+        </div>
+      
       <div class="w3-container w3-card-2 w3-white">
-          <h2 class="w3-text-darkblue w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-darkblue "></i>Education</h2>
+          <h2 class="w3-text-purple w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-darkblue "></i>Education</h2>
           <div class="w3-container">
       
         <h5 class="w3-text-purple"><b>University of Michigan</b><img src="image/umich_logo.png" alt="umich logo" style="float:right;width:120px;height:120px;"></h5>
@@ -100,6 +127,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
       <br>
         </div>
+      
         
 
     <!-- End Right Column -->
@@ -111,7 +139,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<footer class="w3-container w3-purple w3-center w3-margin-top">
   <p>Find me on social media.</p>
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
