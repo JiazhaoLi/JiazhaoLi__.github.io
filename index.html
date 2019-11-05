@@ -148,20 +148,23 @@ function toggleMoreResearch() {
         </div>
 
         <div class="w3-container">
-            <a name="#pub1"></a>
-          <h5 class="w3-opacity"><b>Neural Network Models to Identify Medication Relations from Clinical Narratives.</b><a href="docs/MLHC18_MedRelExtrn.pdf" class="w3-text-purple">[4]</a></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2018 - Mar 2019</h6>
-          <p>Identifying medication relations between drugs and associated attributes automatically from clinical narratives can help develop advanced tools for decision support. We investigate the strengths of neural network models to identify eight medication relations.  We find that relation extraction is sensitive to complexity of data patterns as well as model capacity. Our results show that Bi-LSTM models achieved an overall F1 score of 0.892 on eight tasks, outperforming SVM and CNN models.</p>
-          <hr>
-        </div>
-
-        <div class="w3-container">
             <a name="#pub2"></a>
           <h5 class="w3-opacity"><b>Video Segments Retrieval System based on Attentive Convolutionsl Neural Network</b><a href="docs/ACNN.pdf" class="w3-text-purple">[3]</a></h5>
           <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Dec 2018</h6>
-          <p>Traditional video retrieval methods simply relay on manual hash tags, title and description of video compared with free text query, which suffers from wrong/ inaccurate tagging . We proposed a novel video segments retrieval system based on combination of contextual vedio and text understanding called Attentive Convolutional Nerual Network (ACNN) , achieving state-of-the-art performance on TACoS dataset.   </p><br>
-        </div>
+<p>Traditional video retrieval methods simply relay on manual hash tags, title and description of video compared with free text query, which suffers from wrong/ inaccurate tagging . We proposed a novel video segments retrieval system based on fusion of vedio content understanding and text description understanding called Attentive Convolutional Nerual Network (ACNN) , achieving state-of-the-art performance on TACoS dataset.</p>        
+<p>1️⃣For video embedding, we use attention-weighted context clips to enhence current clips. 2️⃣For text description, we use attentive-weighted N-grams to re-embedding each tokens. 3️⃣In fusion step, potential crossing features are extracted from out-product between video embedding and text embedding.</p>
+</div>
       
+        <div class="w3-container">
+            <a name="#pub1"></a>
+          <h5 class="w3-opacity"><b>Neural Network Models to Identify Medication Relations from Clinical Narratives.</b><a href="docs/MLHC18_MedRelExtrn.pdf" class="w3-text-purple">[4]</a></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2018 - Mar 2019</h6>
+<p>Identifying medication relations between drugs and associated attributes automatically from clinical narratives can help develop advanced tools for decision support. We investigate the strengths of neural network models to identify eight medication relations. We find that relation extraction is sensitive to complexity of data patterns as well as model capacity. Our results show that Bi-LSTM models achieved an overall F1 score of 0.892 on eight tasks, outperforming SVM and CNN models.</p>          
+<p>1️⃣Trained special domain word-embedding using word2vec on MIMICIII clinical notes dataset. 2️⃣ Feature engineering including part-of-speech tag, named-entities-recognition tag, pre-trained token embedding and bi-direction relative position of target entities pair. 3️⃣ Developed Bi-LSTM models to extract 8 relations between drug names and adverse events associated concepts with F1 0.892.</p>
+<hr>
+        </div>
+
+        
         <div id='show_more_button'>
             <button onclick="toggleMoreResearch()" class='button'><span class="w3-tag w3-purple w3-hover-opacity">More research</span></button>
             <hr>
