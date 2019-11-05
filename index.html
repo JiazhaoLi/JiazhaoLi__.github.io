@@ -123,24 +123,28 @@ function toggleMoreResearch() {
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-search fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Research and Project</h2>
         
         <div class="w3-container">
-            <h5 class="w3-opacity"><b>Expert-in-loop: Customized ML Model based on External Domain Knowledge</b></h5>
+            <h5 class="w3-opacity"><b>Expert-in-loop and Explainable NLP model</b></h5>
             <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - <span class="w3-tag w3-purple w3-round">Current</span></h6>
-            <p>Condisering limited and complexed text data (mainly EHR) in health-care domain, we are trying to design HCI model interacting with domain experts to correct, intervene, accelerate model training process. </p>
+            <p>1️⃣Condisering limited and complexed text data (clinical notes like EHR and social media like twitter.) in health-care domain, we are trying to design HCI model interacting with domain experts to correct, intervene, accelerate model training process. 2️⃣Another perspective is to design Explainable natural language processing models for non-technical experts in health-care domain.</p>
             <hr>
           </div>
 
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Prescription Transcription using Transformer-based Machine Translation</b></h5>
+          <h5 class="w3-opacity"><b>Transformer-based Machine Translation between Prescription and Pharmacy directions</b></h5>
           <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - <span class="w3-tag w3-purple w3-round">Current</span></h6>
-          <p>Electronic Transcription of Prescriptions (ETP) in health care has been suggested to have positive impact for prescribing process in safety, quality, efficiency for both prescribers and pharmacists. We are trying to use Transformer-based Machine Translation model to automatically transcripe prescription to pharmacy instructions. More details in following paper.</p>
+          <p>Electronic Transcription of Prescriptions (ETP) in health care has been suggested to have positive impact for prescribing process in safety, quality, efficiency for both prescribers and pharmacists. We are trying to use Transformer-based Machine Translation model to automatically transcripe prescription to pharmacy instructions.</p>
+          <p>1️⃣Solved model Domain Shift on health care using pretrained embedding from MIMICIII dataset. 2️⃣Augmented model with External Information like Drug, Strength, etc. 3️⃣Adding Lexical, Phrase noise to text to increase model Robustness. 4️⃣Applied Ensemble Learning and Numerical Checking to improve accuracy and avoid fictitious generations. 5️⃣Designed Rule-based Pattern Recognition to do Normalization and Simplification based on Pharmacits expertise.</p>
           <hr>
         </div>
         
         <div class="w3-container">
           <h5 class="w3-opacity"><b>How about Avengers: Endgame? Movie revenue prediction with hierarchical model. </b><a href="docs/SI699_poster_Movie_prediction.pdf" class="w3-text-purple">[Lecture Porject Report]</a></h5>
           <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - Apr 2019</h6>
-          <p>IMDb Movie revenue was found followed two Gaussion Distrubution: High revenue and Low revenue. Based on obeservation, we trained High-Low binary Random Forest Classifier based on labels extracted from Gaussion Mixture Model (GMM) clustering. After classification, we trained movie Gradient Boosting Regression (GBR performed best) separately and using Back-off strategy to solving cold start problem. We also tested generalization of our classification + regression model on Europe Soccer Players. </p>
-          <hr>
+<p>With zero information of movie revenue before release, Is that possible to predict Movie revenue in cold start scenario?
+
+    Movie revenue was found followed two Gaussion Distrubution: High revenue and Low revenue. </p>
+    <p> 1️⃣Based on obeservation, we trained High-Low binary Random Forest Classifier based on labels extracted from Gaussion Mixture Model (GMM) clustering. 2️⃣After classification, we trained movie Gradient Boosting Regression (GBR performed best) separately and using Back-off strategy to solving cold start problem. 3️⃣We also tested generalization of our classification + regression model on Europe Soccer Players.</p>          
+<hr>
         </div>
 
         <div class="w3-container">
