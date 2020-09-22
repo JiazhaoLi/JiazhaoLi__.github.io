@@ -127,14 +127,39 @@ function toggleMoreResearch() {
           </div>
 
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>PharmMT: A Neural Machine Translation Approach to Simplify Prescription Directions. (Finding of EMNLP 20' Accepted)</b></h5>
+          <h5 class="w3-opacity"><b>PharmMT: A Neural Machine Translation Approach to Simplify Prescription Directions. (EMNLP 20' Accepted)</b></h5>
           <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - <span class="w3-tag w3-purple w3-round">Dec 2019</span></h6>
           <p>Electronic Transcription of Prescriptions (ETP) in health care has been suggested to have positive impact for prescribing process in safety, quality, efficiency for both prescribers and pharmacists. We are trying to use Transformer-based Machine Translation model to automatically transcripe prescription to pharmacy instructions.</p>
           <p>1️⃣Solved model <b>Domain Shift</b> on health care using pretrained embedding from MIMICIII dataset. 2️⃣Augmented model with <b>External Information</b>  like Drug, Strength, etc. 3️⃣Adding Lexical, Phrase noise to text to increase model <b>Robustness</b>. 4️⃣Applied Ensemble Learning and Numerical Checking to improve accuracy and avoid fictitious generations. 5️⃣Designed Rule-based Pattern Recognition to do <b>Normalization</b> and <b>Simplification</b> based on Pharmacits expertise.</p>
           <hr>
         </div>
         
-        
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>How about Avengers: Endgame? Movie revenue prediction with hierarchical model. </b><a href="docs/SI699_poster_Movie_prediction.pdf" class="w3-text-purple">[Lecture Porject Report]</a></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - Apr 2019</h6>
+<p>With zero information of movie revenue before release, Is that possible to predict Movie revenue in cold start scenario?
+
+    Movie revenue was found followed <b>two mixed Gaussion Distrubution</b>: High revenue and Low revenue. </p>
+    <p> 1️⃣Based on obeservation, we trained High-Low binary Random Forest Classifier based on labels extracted from Gaussion Mixture Model (GMM) clustering. 2️⃣After classification, we trained movie Gradient Boosting Regression (GBR performed best) separately and using Back-off strategy to solving cold start problem. 3️⃣We also tested generalization of our classification + regression model on Europe Soccer Players.</p>          
+<hr>
+        </div>
+
+        <div class="w3-container">
+            <a name="#pub2"></a>
+          <h5 class="w3-opacity"><b>Video Segments Retrieval System based on Attentive Convolutionsl Neural Network</b><a href="docs/ACNN.pdf" class="w3-text-purple">[3]</a></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Dec 2018</h6>
+<p>Traditional video retrieval methods simply relay on manual hash tags, title and description of video compared with free text query, which suffers from wrong/ inaccurate tagging . We proposed a novel video segments retrieval system based on fusion of vedio content understanding and text description understanding called Attentive Convolutional Nerual Network (ACNN) , achieving state-of-the-art performance on TACoS dataset.</p>        
+<p>1️⃣For video embedding, we use <b>attention-weighted context clips </b>to enhence current clips. 2️⃣For text description, we use <b>attentive-weighted N-grams </b>to re-embedding each tokens. 3️⃣In fusion step, potential <b>crossing features </b>are extracted from out-product between video embedding and text embedding.</p>
+</div>
+      
+        <div class="w3-container">
+            <a name="#pub1"></a>
+          <h5 class="w3-opacity"><b>Neural Network Models to Identify Medication Relations from Clinical Narratives.</b><a href="docs/MLHC18_MedRelExtrn.pdf" class="w3-text-purple">[4]</a></h5>
+          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2018 - Mar 2019</h6>
+<p>Identifying medication relations between drugs and associated attributes automatically from clinical narratives can help develop advanced tools for decision support. We investigate the strengths of neural network models to identify eight medication relations. We find that relation extraction is sensitive to complexity of data patterns as well as model capacity. Our results show that Bi-LSTM models achieved an overall F1 score of 0.892 on eight tasks, outperforming SVM and CNN models.</p>          
+<p>1️⃣Trained special domain word-embedding using word2vec on MIMICIII clinical notes dataset. 2️⃣ Feature engineering including part-of-speech tag, named-entities-recognition tag, pre-trained token embedding and bi-direction relative position of target entities pair. 3️⃣ Developed Bi-LSTM models to extract 8 relations between drug names and adverse events associated concepts with F1 0.892.</p>
+<hr>
+        </div>
 
         
         <div id='show_more_button'>
@@ -147,34 +172,6 @@ function toggleMoreResearch() {
           <br>
           <p></p>
         <div id="more_research" class='hidden'>
-            <!-- <div class="w3-container">
-              <h5 class="w3-opacity"><b>How about Avengers: Endgame? Movie revenue prediction with hierarchical model. </b><a href="docs/SI699_poster_Movie_prediction.pdf" class="w3-text-purple">[Lecture Porject Report]</a></h5>
-              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - Apr 2019</h6>
-                  <p>With zero information of movie revenue before release, Is that possible to predict Movie revenue in cold start scenario?
-
-                      Movie revenue was found followed <b>two mixed Gaussion Distrubution</b>: High revenue and Low revenue. </p>
-                      <p> 1️⃣Based on obeservation, we trained High-Low binary Random Forest Classifier based on labels extracted from Gaussion Mixture Model (GMM) clustering. 2️⃣After classification, we trained movie Gradient Boosting Regression (GBR performed best) separately and using Back-off strategy to solving cold start problem. 3️⃣We also tested generalization of our classification + regression model on Europe Soccer Players.</p>          
-                  <hr>
-            </div> -->
-
-            <div class="w3-container">
-              <a name="#pub2"></a>
-              <h5 class="w3-opacity"><b>Video Segments Retrieval System based on Attentive Convolutionsl Neural Network</b><a href="docs/ACNN.pdf" class="w3-text-purple">[3]</a></h5>
-              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Dec 2018</h6>
-              <p>Traditional video retrieval methods simply relay on manual hash tags, title and description of video compared with free text query, which suffers from wrong/ inaccurate tagging . We proposed a novel video segments retrieval system based on fusion of vedio content understanding and text description understanding called Attentive Convolutional Nerual Network (ACNN) , achieving state-of-the-art performance on TACoS dataset.</p>        
-              <p>1️⃣For video embedding, we use <b>attention-weighted context clips </b>to enhence current clips. 2️⃣For text description, we use <b>attentive-weighted N-grams </b>to re-embedding each tokens. 3️⃣In fusion step, potential <b>crossing features </b>are extracted from out-product between video embedding and text embedding.</p>
-            </div>
-                    
-            <div class="w3-container">
-              <a name="#pub1"></a>
-              <h5 class="w3-opacity"><b>Neural Network Models to Identify Medication Relations from Clinical Narratives.</b><a href="docs/MLHC18_MedRelExtrn.pdf" class="w3-text-purple">[4]</a></h5>
-              <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2018 - Mar 2019</h6>
-              <p>Identifying medication relations between drugs and associated attributes automatically from clinical narratives can help develop advanced tools for decision support. We investigate the strengths of neural network models to identify eight medication relations. We find that relation extraction is sensitive to complexity of data patterns as well as model capacity. Our results show that Bi-LSTM models achieved an overall F1 score of 0.892 on eight tasks, outperforming SVM and CNN models.</p>          
-              <p>1️⃣Trained special domain word-embedding using word2vec on MIMICIII clinical notes dataset. 2️⃣ Feature engineering including part-of-speech tag, named-entities-recognition tag, pre-trained token embedding and bi-direction relative position of target entities pair. 3️⃣ Developed Bi-LSTM models to extract 8 relations between drug names and adverse events associated concepts with F1 0.892.</p>
-              <hr>
-            </div>
-
-
             <div class="w3-container">
                 <a name="#pub4"></a>
                 <h5 class="w3-text-gray"><b>Baby blues: Analyzing Facebook and health forums on Pregnancy</b><span><a href="docs/FB_MH_Pregnancy.pdf" class="w3-text-purple">[2]</a></h5>
@@ -182,9 +179,7 @@ function toggleMoreResearch() {
                 <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2018 - Sep 2018 </h6>
                 <p>In the study, we systematically analyzed questions posted on pregnancy forums by young mothers and contrasted it to a unique dataset of Facebook posts by expecting adolescent women. Distribution of themes across these platforms showed significant differences on roles played by the two platforms. We concluded that Facebook is chosen as a <b>self-expression </b>place to seek emotional support while health forum served as professional <b>information provider</b>.</p>
                 <hr>
-            </div>
-
-
+              </div>
             <div class="w3-container">
                 <a name="#pub3"></a>
               <h5 class="w3-text-gray"><b>PageRank++: European Soccer Team Ranking Prediction</b><span><a href="docs/Page++.pdf" class="w3-text-purple">[1]</a></h5>
@@ -195,27 +190,9 @@ function toggleMoreResearch() {
             </div>
             
           </div>
+
+      </div>
       
-      </div>
-      <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-purple w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-darkblue "></i>Publication</h2>
-        <div class="w3-container">
-            
-        <h6 class="w3-opacity"><b><u>Jiazhao Li</u>, Corey Lester, Xinyan Zhao, Yuting Ding, Yun Jiang, and V.G.Vinod Vydiswaran.  PharmMT:A Neural Machine Translation Approach to Simplify Prescription Directions.  In Findings of EMNLP, the 2020 Conference on Empirical Methods in Natural Language Processing.  (Accepted).</h5>
-        <h6 class="w3-opacity"><b><u>Jiazhao Li</u>, Adharsh Murali, Qiaozhu Mei, V.G.Vinod Vydiswaran. Re-ranking biomedical literature for precision medicine with pre-trained neural models. Proceedings of the IEEE International Conference of Healthcare Informatics (ICHI), 2020. (Accepted)</h5>
-
-          
-          <!-- <h6 class="w3-opacity"><b>Xinyan Z., Jiazhao L., Vydiswaran V. G., etc. "Focused representation models for transcribing prescription instructions."   (MIDAS Symposium 2019 Accepted)</h5>     -->
-        <h6 class="w3-opacity"><b>Zhao X, <u>Li J</u>, Lester C, Ding Y, Jiang Y, Vydiswaran VGV. "Focused representation with lexical constraints for parsing prescription instructions to decrease medication error. " (Under review)</b></h5>
-        <h6 class="w3-opacity"><b>Zhao X, <u>Li J</u>, Lester C, Jiang Y, Vydiswaran VGV Focused representation models for transcribing prescription instructions. (Poster MIDAS 2019 Symposium)</h5>
-            <!-- <h6 class="w3-opacity"><b>Xinyan Z., Jiazhao L., Vydiswaran V. G., etc. "Focused representation models for transcribing prescription instructions."   (MIDAS Symposium 2019 Accepted)</h5>     -->
-        <h6 class="w3-opacity"><b><u>Jiazhao L.</u>, Jinghui L., Vydiswaran V. G. "Neural Network Models to Identify Medication Relations from Clinical Narratives." (MLHC 2019 submitted)</b><a href="docs/MLHC18_MedRelExtrn.pdf" class="w3-text-purple">[4]</a></h5>
-        <h6 class="w3-opacity"><b><u>Li J</u>, Vydiswaran VGV Baby blues: Analyzing Facebook and health forums on Pregnancy. (WWW 2019 Submitted)</b></h5>
-
-        </div>
-    <br>
-      </div>
-    
       <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience </h2>
           
@@ -240,6 +217,21 @@ function toggleMoreResearch() {
       </div>
       
      
+      <div class="w3-container w3-card-2 w3-white">
+          <h2 class="w3-text-purple w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-darkblue "></i>Publication</h2>
+          <div class="w3-container">
+              
+          <h6 class="w3-opacity"><b>Jiazhao Li, Corey Lester, Xinyan Zhao, Yuting Ding, Yun Jiang, and V.G.Vinod Vydiswaran.  PharmMT:A Neural Machine Translation Approach to Simplify Prescription Directions.  In Findings of EMNLP, the 2020 Conference on Empirical Methods in Natural Language Processing.  (Accepted).</h5>
+          <!-- <h6 class="w3-opacity"><b>Xinyan Z., Jiazhao L., Vydiswaran V. G., etc. "Focused representation models for transcribing prescription instructions."   (MIDAS Symposium 2019 Accepted)</h5>     -->
+          <h6 class="w3-opacity"><b>Zhao X, Li J, Lester C, Ding Y, Jiang Y, Vydiswaran VGV. "Focused representation with lexical constraints for parsing prescription instructions to decrease medication error. " (Under review)</b></h5>
+          <h6 class="w3-opacity"><b>Zhao X, Li J, Lester C, Jiang Y, Vydiswaran VGV Focused representation models for transcribing prescription instructions. (Poster MIDAS 2019 Symposium)</h5>
+              <!-- <h6 class="w3-opacity"><b>Xinyan Z., Jiazhao L., Vydiswaran V. G., etc. "Focused representation models for transcribing prescription instructions."   (MIDAS Symposium 2019 Accepted)</h5>     -->
+          <h6 class="w3-opacity"><b>Jiazhao L., Jinghui L., Vydiswaran V. G. "Neural Network Models to Identify Medication Relations from Clinical Narratives." (MLHC 2019 submitted)</b><a href="docs/MLHC18_MedRelExtrn.pdf" class="w3-text-purple">[4]</a></h5>
+          <h6 class="w3-opacity"><b>Li J, Vydiswaran VGV Baby blues: Analyzing Facebook and health forums on Pregnancy. (WWW 2019 Submitted)</b></h5>
+
+          </div>
+      <br>
+      </div>
       
       <div class="w3-container w3-card-2 w3-white">
         <h2 class="w3-text-purple w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-darkblue "></i>Education</h2>
